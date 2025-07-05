@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>betty</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="download.js"></script>
+        
+        
+
+    </head>
+    <body>
+        <img src="C:\Users\hp\Pictures\acklogo.png" alt="" style="width: 100px; height: 100px; margin-left: 550px; padding: 10px;">
+   <nav>
+   
+    <div class="nav_links">
+        <ul>
+             <li class="link"><a href="index.html">Home</a></li>
+        
+         <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">About Us</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="who.html">Who we are</a>
+    <a href="vicar.html">The Vicar</a>
+    <a href="assistantvicar.html">Assistant Vicar</a>
+    <a href="pastoral.html">Board Of Pastoral Care</a>
+    
+  </div>
+        </div>
+       
+
+             <li class="link"><a href="church.html">The Church</a></li>
+           <li class="link"><a href="news.html">News</a></li>
+          <li class="link"><a href="gallery.html">Media Gallery</a></li>
+          <li class="link"><a href="mu.html">Mothers Union</a></li>
+          <li class="link"><a href="kama.html">KAMA</a></li>
+          <li class="link"><a href="download.html">Downloads</a></li>
+           <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+   </nav>
+   <section class="header">
+    <h1>The Parish Gallery</h1>
+    <p>The Parish's past event images.
+      <br>
+      These images shows the events that have already taken place in the Parish
+      as a whole. 
+      <br>
+      Explore and Enjoy.
+      <br>
+      We lead as others follow
+    </p>
+        <br>
+        
+   </section>
+
+   <p>Click on the image to download it:<p>
+<a href="c:\Users\hp\Pictures\treeenyaks.jpg" download="nyakslogo">
+  <img src="c:\Users\hp\Pictures\treeenyaks.jpg" alt="ackparish" width="104px" height="142px">
+</a>
+
+<section class="gallery">
+  <h1>the Parish Gallery</h1>
+  <div class="row">
+    <div class="gallery_col">
+
+        <img src="c:\Users\hp\Pictures\treeenyaks.jpg" alt="nyakongo" >
+
+        
+                    <input type="button" value="Download PDF File" onclick="DownloadFile('Sample.pdf')" />
+    </div>
+    <div class="gallery_col">
+       <img src="c:\Users\hp\Pictures\nyakongoo.jpeg" alt="">
+                
+    </div>
+    <div class="gallery_col">
+        <img src="C:\Users\hp\Downloads\IMG-20241125-WA0003.jpg" alt="">
+                   
+    </div>
+    <div class="gallery_col">
+       <img src="C:\Users\hp\Downloads\IMG-20241125-WA0002.jpg" alt="">
+                
+    </div>
+ 
+    
+  </div>
+   <div class="row">
+    <div class="gallery_col">
+        <img src="c:\Users\hp\Pictures\treeenyaks.jpg" alt="">
+                   
+    </div>
+    <div class="gallery_col">
+       <img src="c:\Users\hp\Pictures\nyakongoo.jpeg" alt="">
+                
+    </div>
+    <div class="gallery_col">
+        <img src="C:\Users\hp\Downloads\IMG-20241125-WA0003.jpg" alt="">
+                   
+    </div>
+    <div class="gallery_col">
+       <img src="C:\Users\hp\Downloads\IMG-20241125-WA0002.jpg" alt="">
+                
+    </div>
+    
+    
+  </div>
+    <script type="text/javascript">
+        function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Files/" + fileName;
+ 
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+        };
+    </script>
+</section>
+   <div class="footer">
+    <h1>St. Mark's Nyakongo ACK Parish Website</h1>
+    <div class="working_hours_row">
+      <div class="contents_col">
+          <h2>working hours</h2>
+    <p>Monday - Friday</p>
+    <p>8:00am - 6:00pm</p>
+      </div>
+       <div class="contents_col">
+          <h2>Nyakongo ACK Parish</h2>
+    <img src="C:\Users\hp\Pictures\acklogo.png" alt="" style="width: 100px; height: 100px; position:absolute; margin-left: 120px;">
+      </div>
+      <div class="contents_col">
+           <h2>working hours</h2>
+    <p>Weekends</p>
+    <p>8:00am - 4:00pm</p>
+     </div>
+    </div>
+     <div class="footer_links">
+        <ul>
+           
+           <li class="link"><a href="news.html">News</a></li>
+          <li class="link"><a href="gallery.html">Media Gallery</a></li>
+          <li class="link"><a href="mu.html">Mothers Union</a></li>
+          <li class="link"><a href="kama.html">KAMA</a></li>
+          <li class="link"><a href="download.html">Downloads</a></li>
+          
+        </ul>
+    </div>
+     
+   <div class="foot">
+    &copy:acknyakongoparish
+   </div>
+   </div>
+    
+           
+    </body>
+</html>

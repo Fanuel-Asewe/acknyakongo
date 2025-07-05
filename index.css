@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bookman old style';
+
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding:  5rem 1rem;
+}
+
+.section_header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: flex;
+
+}
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(182, 191, 230, 0.7), rgba(4,9,30,0.7)),
+    url(../../Pictures/nyakongo.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    h1{
+        color: #f44366;
+        font-size: 4.5rem;
+        text-align: center;
+        padding: 10px;
+        padding-top: 100px;
+        
+    }
+    p{
+        color: blue;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 32, 23);
+    height: 40px;
+}
+nav img{
+    width: 150px;
+}
+
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+.nav_links ul li{
+list-style:none;
+display: inline-block;
+padding: 8px 22px;
+position: relative;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44366;
+    display: block  ;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+width: 100%;
+}
+.nav_links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color:inherit;
+  color: #fff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  text-decoration: overline;
+  transition: 0.5s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative
+    ;
+    cursor: pointer;
+    margin-left: 520px;
+}
+.hero-btn:hover{
+    border: 1px solid #f44366;
+    background: #f44366;
+    transition: 1s;
+}
+
+/*....................projects..................*/
+.project{
+    h1{
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+         color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 15px;
+    }
+    img{
+        max-height: 500px;
+    }
+}
+/*......................news chapter..............................................*/
+.news{
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px;
+    }
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .elementor-image-box-img{
+        background-image: url(../../Downloads/IMG-20241125-WA0000.jpg);
+        max-height: 62cm;
+    }
+    .elementor-image-box-img img {
+    transition-duration: 0.3s;
+}
+.elementor-image-box-img img {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 500px;
+    max-width: 500px;
+}
+.elementor-image-box-img img:hover{
+    opacity: 0.3;
+    
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+img {
+    vertical-align: middle;
+}
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(39, 3, 239);
+    border: 1px solid rgb(16, 4, 248);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative
+    ;
+    cursor: pointer;
+    margin-left: 520px;
+}
+.hero-btn:hover{
+    border: 1px solid #f44366;
+    background: #f44366;
+    transition: 1s;
+}
+/*.......................................children_ministry............................*/
+.children_ministry{
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    p{
+         font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+    .card{
+        max-width: 700px;
+        max-height: 400px;
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+        margin-left: 40px;
+      
+
+        img{
+            height: 200px;
+            width: 200;
+        }
+    }
+}
+/*................................community_work.......................*/
+.community_work{
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 25px;
+    }
+    p{
+          text-align: center;
+        font-size: 1.5rem;
+        padding: 25px;
+    }
+    .container {
+            display: flex;
+            justify-content: space-between;
+            /* Adjust as needed: flex-start, center, space-between, space-around */
+            align-items: center;
+            height: 100vh;
+            /* Full viewport height */
+        }
+
+        img {
+            width: 45%;
+            height: 500px;
+        }
+}
+.word{
+    
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    p{
+         text-align: center;
+        font-size: 1.5rem;
+        background-color: yellowgreen;
+        padding: 15px;
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.9);
+    }
+}
+/*...........................................choir.................................*/
+.choir{
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 15px;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px;
+    }
+}
+/*............................contact us......................*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+/*.....................................footer............................................*/
+.footer{
+    background-color: #ddd;
+
+    h1{
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 15px;
+        padding-top: 20px;
+    }
+    .working_hours_row{
+      margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .contents_col{
+        flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    p{
+           text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    }
+    .footer_links{
+    flex: 1;
+    text-align: right;
+}
+.footer_links ul li{
+list-style:none;
+display: inline-block;
+padding: 8px 22px;
+position: relative;
+margin-left: 10px;
+margin-right: 60px;
+
+}
+.footer_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44366;
+    display: block  ;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer_links ul li:hover::after{
+width: 100%;
+}
+.footer_links ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+    .foot{
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 25px;
+    }
+}
+/*.................................vision....................................*/
+.vision{
+    background-image: linear-gradient(rgba(182, 191, 230, 0.7), rgba(4,9,30,0.7)),
+        url(c:\Users\hp\Downloads\l3.jpeg);
+    height: 300px;
+    width: 100%;
+    
+
+
+ .row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+      flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+
+    h1{
+        text-align: center;
+        font-size: 2.3rem
+        
+    }
+    p{
+       text-align: center;
+        font-size: 1.0rem 
+    }
+}
+}
+/*............................................values..............................*/
+.values{
+    box-shadow: 5px 5px 5px 5px rgb(193, 197, 196);
+    height: 150px;
+    max-width: 900px;
+    margin-left: 180px;
+    margin-top: 150px;
+    background-color: lightblue;
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    ul{
+        
+        display: inline;
+        list-style: flex;
+        list-style-type: square;
+        justify-content: right;
+
+    }
+    li{
+        display: inline-block;
+        padding: 10px;
+        padding-left: 15px;
+    }
+    .elementor-divider {
+    text-align: center;
+    padding-block-start: 9px;
+    padding-block-end: 9px;
+}
+ .elementor-divider {
+    display: flex
+;
+}
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+}
+/*...........................................vicar.......................................*/
+
+.vicar{
+    h1{
+        font-size: 2.1rem;
+        padding: 10px;
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 40px;
+    }
+    h2{
+        padding: 15px;
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-align: center
+        ;
+    }
+    p{
+        padding: 10px;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 30px;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 95px;
+        border: #f44366;
+        margin-left: 530px;
+        
+    }
+}
+/*.......................................vicar_saying............................*/
+.vicar_saying{
+    box-shadow: 5px 5px 5px 5px rgb(108, 110, 110);
+     background-image: linear-gradient(rgba(2, 7, 28, 0.7), rgba(4,9,30,0.7)),
+   url(../../Pictures/bible.jpeg);
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    p{
+        font-size: 1.4rem;
+        padding: 10px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+
+    }
+    p:hover{
+        font-size: 1.7rem;
+        padding: 10px;
+        text-align: center;
+        padding-top: 30px;
+        color: red;
+    }
+     img{
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 95px;
+        border: #f44366;
+        align-self: flex-end;
+        margin-left: 500px;
+         opacity: 0.3;
+    }
+    img:hover{
+        opacity: 0.9;
+        
+    }
+}
+.parish{
+    p{
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    h1{
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 15px;
+    }
+    li{
+        font-size: 1.7rem;
+        padding: 20px;
+        text-align: center;
+    }
+}
+/*..........................................gallery................................*/
+.gallery{
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 25px;
+    }
+   .row{
+      margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .gallery_col{
+        flex-basis: 31%;
+    
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+img{
+    width: 250px;
+    height: 250px;
+}   
+
+}
+   
+}
+/*................................Contact Us.................................................*/
+.contact{
+    background-image: linear-gradient();
+
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    p{
+            text-align: center;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
+  .comment-box{
+            margin: 50px 0;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            max-width: 51%;
+            margin-left: 300px;
+
+         }
+         .comment-box h3{
+            text-align: left;
+         }
+         .comment-form input,
+         .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background: #f0f0f0;
+         }
+         .comment-form button{
+            margin: 10px 0;
+         }
+         .red-btn{
+              display: inline-block;
+    text-decoration: none;
+    color: rgb(171, 6, 6);
+    border: 1px solid rgb(217, 12, 12);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative
+    ;
+    cursor: pointer;
+         }
+           .red-btn:hover{
+            color: white;
+            background-color: rgb(217, 12, 12);
+           }
+         /*...................................media...........................*/
+        .media{
+
+            .glow{
+            a{
+            text-decoration: none;
+            padding: 30px;
+            background-color:wheat ;
+            border-radius: 5px;
+            justify-content: space-between;
+            margin-left: 150px;
+            width: 100px;
+            margin-top: 30px;
+        }
+        a:hover{
+            background-color: white;
+            font-weight: bolder;
+        }
+      
+            }
+        }
